@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Links</title>
   <style>
+    h2 {
+      text-shadow: 0 0 3px #FF0000;
+    }
     a.sport-link:link, a.sport-link:visited {
       padding: 14px 25px;
       text-align: center;
@@ -13,19 +11,26 @@
       display: inline-block;
       margin-bottom: 10px;
       font-family: verdana;
+      border-radius: 8px;
     }
 
     a.sport-link:hover, a.sport-link:active {
       background-color: red;
     }
-    a.tabletennis-link {
+    a.tabletennis {
       background-color: #32CD32;
       color: white;
     }
+    a.carrom {
+      background-color: rebeccapurple;
+      color: white;
+    }
   </style>
-</head>
 <body bgcolor="grey">
-  <h2>Select a sport</h2><br><br>
-  <a class="sport-link tabletennis-link" href="sports/indoor/tabletennis.html" target="contentFrame">Table Tennis</a><br><br>
+  <h2><u>SELECT A SPORT</u></h2>
+  <ul>
+    <li><a class="sport-link tabletennis" href="sports/indoor/tabletennis.html" target="contentFrame">Table Tennis</a></li>
+    <li><a class="sport-link carrom" href="sports/indoor/carrom.html" target="contentFrame">Carrom</a></li>
+  </ul>
 </body>
 </html>
